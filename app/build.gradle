@@ -50,6 +50,10 @@ spotless {
 		trimTrailingWhitespace()
 		endWithNewline()
 
+		// https://github.com/diffplug/spotless/issues/1245#issuecomment-1166195981
+		indentWithTabs(2)
+		indentWithSpaces(4)
+
 		targetExclude('src/main/java/frc/robot/generated/**')
 	}
 
@@ -65,7 +69,7 @@ spotless {
 
 	json {
 		target '**/*.json'
-		simple().indentWithSpaces(2)
+		simple().indentWithSpaces(4)
 	}
 
 	format 'misc', {
