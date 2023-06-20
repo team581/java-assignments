@@ -19,7 +19,7 @@ public class Calculator {
     int result = calculator(a, operator, b);
     boolean pass = result == expected;
     System.out.printf(
-        "calculator(%d, %s, %d) -> %d | %d | %s \n",
+        "calculator(%d, \"%s\", %d) -> %d | %d | %s \n",
         a, operator, b, expected, result, pass ? "OK " : "X ");
   }
 
