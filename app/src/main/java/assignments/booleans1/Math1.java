@@ -28,10 +28,10 @@ public class Math1 {
         testDoMath(false, false, false, 0);
         testDoMath(false, false, true, 0);
         testDoMath(false, true, false, -3);
-        testDoMath(false, true, true, -3);
+        testDoMath(false, true, true, -6);
         testDoMath(true, false, false, 7);
         testDoMath(true, false, true, 14);
         testDoMath(true, true, false, 4);
-        testDoMath(true, true, true, 11);
+        testDoMath(true, true, true, 8);
     }
 }
