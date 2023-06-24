@@ -1,7 +1,7 @@
 package assignments.arrays1;
 
 public class MiddleItem {
-    // Create a function lastItem which takes an array of Strings and returns the middle item in that
+    // Create a function middleItem which takes an array of Strings and returns the middle item in that
     // array
 
     // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv YOUR CODE vvvvvvvvvvvvvvvvvvvvvvvvvvvvv//
