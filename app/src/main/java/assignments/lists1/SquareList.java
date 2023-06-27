@@ -9,7 +9,7 @@ public class SquareList {
     // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv YOUR CODE vvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
     private static List<Integer> squareList(List<Integer> input) {
-        return new ArrayList<>();
+        return new ArrayList<Integer>();
     }
 
     // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ YOUR CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
