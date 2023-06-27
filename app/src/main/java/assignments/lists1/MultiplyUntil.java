@@ -5,7 +5,8 @@ public class MultiplyUntil {
     // Store that number, and keep multiplying by 3 until the number is greater than 100.
     // Count the number of times you multiplied, and return that number.
 
-    // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv YOUR CODE vvvvvvvvvvvvvvvvvvvvvvvvvvvvv//
+    // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv YOUR CODE vvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
     private static int multiplyUntil(int value) {
         return 0;
     }
