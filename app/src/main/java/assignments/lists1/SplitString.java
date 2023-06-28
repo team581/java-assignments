@@ -9,7 +9,7 @@ public class SplitString {
 
     // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv YOUR CODE vvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
-    private static List<String> splitString(String input) {
+    private static ArrayList<String> splitString(String input) {
         return new ArrayList<String>();
     }
 

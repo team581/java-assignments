@@ -8,7 +8,7 @@ public class SquareList {
 
     // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv YOUR CODE vvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
-    private static List<Integer> squareList(List<Integer> input) {
+    private static ArrayList<Integer> squareList(ArrayList<Integer> input) {
         return new ArrayList<Integer>();
     }
 
@@ -16,7 +16,7 @@ public class SquareList {
 
     private static void testSquareList(List<Integer> input, List<Integer> expected) {
         System.out.println("");
-        List<Integer> result = squareList(input);
+        List<Integer> result = squareList(new ArrayList(input));
         boolean pass = result.equals(expected);
         __testResults +=
                 String.format(

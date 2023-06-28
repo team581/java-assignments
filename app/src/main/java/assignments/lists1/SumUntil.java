@@ -1,5 +1,6 @@
 package assignments.lists1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SumUntil {
@@ -8,7 +9,7 @@ public class SumUntil {
 
     // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv YOUR CODE vvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
-    private static int sumUntil(List<Integer> input) {
+    private static int sumUntil(ArrayList<Integer> input) {
         return 0;
     }
 
@@ -16,7 +17,7 @@ public class SumUntil {
 
     private static void testSumUntil(List<Integer> input, int expected) {
         System.out.println("");
-        int result = sumUntil(input);
+        int result = sumUntil(new ArrayList(input));
         boolean pass = result == expected;
         __testResults +=
                 String.format(

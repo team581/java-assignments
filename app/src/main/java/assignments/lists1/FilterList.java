@@ -11,14 +11,14 @@ public class FilterList {
 
     // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv YOUR CODE vvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
-    private static void filterList(ArrayList<String> input, List<String> filter) {}
+    private static void filterList(ArrayList<String> input, ArrayList<String> filter) {}
 
     // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ YOUR CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     private static void testFilterList(
-            ArrayList<String> input, List<String> filter, List<String> expected) {
+            List<String> input, List<String> filter, List<String> expected) {
         System.out.println("");
-        filterList(input, filter);
+        filterList(new ArrayList<>(input), new ArrayList<>(filter));
         boolean pass = input.equals(expected);
         __testResults +=
                 String.format(
@@ -29,14 +29,12 @@ public class FilterList {
     private static String __testResults = "";
 
     public static void main(String[] args) {
-        testFilterList(
-                new ArrayList(List.of("a", "b", "c")), List.of("a", "b", "c"), List.of("a", "b", "c"));
-        testFilterList(
-                new ArrayList(List.of("a", "b", "c")), List.of("a", "b", "d"), List.of("a", "b"));
-        testFilterList(new ArrayList(List.of("a", "b", "c")), List.of("d", "e", "f"), List.of());
-        testFilterList(new ArrayList(List.of("a", "b", "c")), List.of(), List.of());
-        testFilterList(new ArrayList(), List.of("a", "b", "c"), List.of());
-        testFilterList(new ArrayList(), List.of(), List.of());
+        testFilterList(List.of("a", "b", "c"), List.of("a", "b", "c"), List.of("a", "b", "c"));
+        testFilterList(List.of("a", "b", "c"), List.of("a", "b", "d"), List.of("a", "b"));
+        testFilterList(List.of("a", "b", "c"), List.of("d", "e", "f"), List.of());
+        testFilterList(List.of("a", "b", "c"), List.of(), List.of());
+        testFilterList(List.of(), List.of("a", "b", "c"), List.of());
+        testFilterList(List.of(), List.of(), List.of());
         System.out.println("Function Call -> Expected | Yours | Pass?\n");
         System.out.println(__testResults);
     }
