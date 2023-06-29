@@ -18,12 +18,13 @@ public class FilterList {
     private static void testFilterList(
             List<String> input, List<String> filter, List<String> expected) {
         System.out.println("");
-        filterList(new ArrayList<>(input), new ArrayList<>(filter));
-        boolean pass = input.equals(expected);
+        ArrayList<String> result = new ArrayList<>(input);
+        filterList(result, new ArrayList<>(filter));
+        boolean pass = result.equals(expected);
         __testResults +=
                 String.format(
                         "filterList(%s, %s) -> %s | %s | %s \n",
-                        input, filter, expected, input, pass ? "OK " : "X ");
+                        input, filter, expected, result, pass ? "OK " : "X ");
     }
 
     private static String __testResults = "";
