@@ -23,12 +23,8 @@ public class AverageArray {
     public static void main(String[] args) {
         System.out.println("Function Call -> Expected | Yours | Pass?\n");
         testAverageArray(new int[] {1, 2, 3, 4, 5}, 3);
-        testAverageArray(new int[] {1, 2, 3, 4, 5, 6}, 3);
-        testAverageArray(new int[] {1, 2, 3, 4, 5, 6, 7}, 4);
-        testAverageArray(new int[] {1, 2, 3, 4, 5, 6, 7, 8}, 4);
-        testAverageArray(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9}, 5);
-        testAverageArray(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 5);
-        testAverageArray(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 5);
-        testAverageArray(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 5);
+        testAverageArray(new int[] {3, 3, 3}, 3);
+        testAverageArray(new int[] {10, 20, 25}, 18);
+        testAverageArray(new int[] {50, 50, 0}, 33);
     }
 }
