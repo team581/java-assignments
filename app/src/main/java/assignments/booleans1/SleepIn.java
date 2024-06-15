@@ -9,19 +9,19 @@ public class SleepIn {
         return false; // return whether you should sleep in today.
     }
 
-    private static void TestSleepIn(boolean weekday, boolean vacation, boolean expected) {
+    private static void testSleepIn(boolean weekday, boolean vacation, boolean expected) {
         boolean result = sleepIn(weekday, vacation);
         boolean pass = result == expected;
         System.out.printf(
-                "SleepIn(%b, %b) -> %b | %b | %s \n",
+                "sleepIn(%b, %b) -> %b | %b | %s \n",
                 weekday, vacation, expected, result, pass ? "OK " : "X ");
     }
 
     public static void main(String[] args) {
         System.out.println("Function Call -> Expected | Yours | Pass?\n");
-        TestSleepIn(false, false, true);
-        TestSleepIn(true, false, false);
-        TestSleepIn(false, true, true);
-        TestSleepIn(true, true, true);
+        testSleepIn(false, false, true);
+        testSleepIn(true, false, false);
+        testSleepIn(false, true, true);
+        testSleepIn(true, true, true);
     }
 }
