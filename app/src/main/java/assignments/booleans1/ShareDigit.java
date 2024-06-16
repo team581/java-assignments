@@ -17,23 +17,23 @@ public class ShareDigit {
 
     // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ YOUR CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    private static void TestShareDigit(int a, int b, boolean expected) {
+    private static void testShareDigit(int a, int b, boolean expected) {
         boolean result = shareDigit(a, b);
         boolean pass = result == expected;
         System.out.printf(
-                "SleepIn(%d, %d) -> %b | %b | %s \n", a, b, expected, result, pass ? "OK " : "X ");
+                "shareDigit(%d, %d) -> %b | %b | %s \n", a, b, expected, result, pass ? "OK " : "X ");
     }
 
     public static void main(String[] args) {
         System.out.println("Function Call -> Expected | Yours | Pass?\n");
-        TestShareDigit(12, 23, true);
-        TestShareDigit(12, 43, false);
-        TestShareDigit(12, 44, false);
-        TestShareDigit(23, 39, true);
-        TestShareDigit(23, 19, false);
-        TestShareDigit(30, 90, true);
-        TestShareDigit(30, 91, false);
-        TestShareDigit(55, 55, true);
-        TestShareDigit(55, 44, false);
+        testShareDigit(12, 23, true);
+        testShareDigit(12, 43, false);
+        testShareDigit(12, 44, false);
+        testShareDigit(23, 39, true);
+        testShareDigit(23, 19, false);
+        testShareDigit(30, 90, true);
+        testShareDigit(30, 91, false);
+        testShareDigit(55, 55, true);
+        testShareDigit(55, 44, false);
     }
 }
