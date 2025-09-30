@@ -1,7 +1,6 @@
 package assignments.ints1;
 
 public class ThirdPower {
-
     // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv YOUR CODE vvvvvvvvvvvvvvvvvvvvvvvvvvvvv//
     private static int calculateThirdPower(int number) {
         // return (number to third power)

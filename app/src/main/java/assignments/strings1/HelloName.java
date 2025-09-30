@@ -1,7 +1,6 @@
 package assignments.strings1;
 
 public class HelloName {
-
     // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv YOUR CODE vvvvvvvvvvvvvvvvvvvvvvvvvvvvv//
     private static String helloName(String name) {
         // return Hello {name}!
